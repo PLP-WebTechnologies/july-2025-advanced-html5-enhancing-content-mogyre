@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+    <html lang="en"></html>
+        <head>
+             <meta charset="UTF-8" />
+             <meta name="description" content="assignment page"/>
+             <meta name="keywords" content="assignment, tasks, projects"/>
+             <title>Enhanced HTML5 Form</title>
+           
+        </head>
+    <body>
+        <header>
+            <h1>Registration Form</h1>
+           <p>Fill out the form below to register</p>
+        </header>
+    <main>
+       
+       <section>
+            <h2>Form Instructions</h2>
+            <ul>
+                <li>All fields marked with * are mandatory.</li>
+                <li>Use a valid email format (e.g., name@example.com).</li>
+                <li>Password must be at least 8 characters and contain one number.</li>
+            </ul>
+                <h2>Programming Languages</h2>
+             <ol>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>Java</li>
+            </ol>
+
+        </section>
+        
+
+        <section>
+            <h2>Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rosa Camilla</td>
+                    <td>BSCS</td>
+                    <td>4yrs</td>
+                </tr>
+            
+                <tr>
+                    <td>Joseph Parmuat</td>
+                    <td>BMSC</td>
+                    <td>5yrs</td>
+                </tr>
+                <tr>
+                    <td>Resian Oloisudori</td>
+                    <td>BTIT</td>
+                    <td>4yrs</td>
+                </tr>
+                <tr>
+                    <td>Tatiana Matata</td>
+                    <td>BSIT</td>
+                    <td>3yrs</td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+        <section>
+            <h2>Image</h2>
+            <img src="image.png" alt="Picture"
+            width="500"
+            height="300">
+            <br><br>
+        
+        <h2>Video</h2>
+        <video 
+         width="500"
+         height="300"
+         controls>
+         <source src="video.mp4" type="video/mp4">
+         Your browser does not support the videos.
+        </video>
+        <br><br>
+
+        <h2>Audio</h2>
+        <audio controls>
+         <source src="Faithful Is Our God.mp3" type="audio/mpeg">
+         Your browser does not support the video.
+        </audio>
+        <br><br>
+        
+        </section>
+
+        <Section>
+            <h2>Forms</h2>
+                <form action="/submit" method="post" autocomplete="on" novalidate>
+                <label for="fullname">Full Name: *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your name here">
+                <br><br>
+                <label for="email">Email: *</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email here">
+                <br><br>
+                <label for="password">Password: *</label>
+                <input type="password" id="password" name="password" placeholder="At least 8 characters"
+                  pattern="(?=. *\d.{8,})" required
+                  title="Must be at least 8 characters and contain a number.">
+                <br><br>
+                <label for="dob">Date of Birth:*</label>
+                <input type="date" id="dob" name="dob" required>
+                <br><br>
+                <label for="gender">Gender: *</label>
+                <input type="radio"  name="gender" value="Male">Male>
+                <input type="radio"  name="gender" value="Male">Male>
+                <br><br>
+                <label for="cv">Upload CV: *</label>
+                <input type="file" id="cv" name="cv">
+                <br><br>
+                <label for="country">Country: *</label>
+                <input type="text" id="country" name="country" placeholder="e.g., Canada" required />
+                <br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[\d\s\-]+" placeholder="123-456-7890" />
+                <br><br>
+
+                <label for="bio">Bio: *</label>
+                <textarea name="bio" id="bio" cols="40" rows="12" placeholder="write your bio here">
+                </textarea>
+                <br><br>
+
+                <label for="comments">Comments: </label>
+                <textarea id="comments" name="comments" minlength="12px" maxlength="12px" rows="2" cols="10"></textarea>
+                <br><br>
+                <input type="Submit" value="Submit">
+                <br>
+            </form>
+        </Section>
+
+    </main>
+    <footer>
+    <p>&copy; 2025 Registration Form. All rights reserved.</p>
+    </body>
+</html>
